@@ -11,7 +11,9 @@ public class FunctionalTest {
 
     @BeforeClass
     public static void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/ChromeDriver/chromedriver.exe");
+        // this was necessary for my YandexBrowser
+        // uncomment, configure your chrome binary if needed, then initialize ChromeDriver with parameter "options"
         ChromeOptions options = new ChromeOptions();
         options.setBinary("C:/Users/WinterSun/AppData/Local/Yandex/YandexBrowser/Application/browser.exe");
         driver = new ChromeDriver(options);

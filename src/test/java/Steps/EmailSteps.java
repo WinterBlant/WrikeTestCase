@@ -15,7 +15,7 @@ public class EmailSteps {
         this.home = new HomePage(driver);
     }
 
-    @Step
+    @Step("Enter the 6-10 symbols email in the necessary field and press the button.")
     public QAPage enterEmail() throws InterruptedException {
         this.home.bClick();
         QAPage success = this.home.inputEmail(email);

@@ -11,13 +11,13 @@ public class SuccessPageSteps {
         this.success = success;
     }
 
-    @Step
+    @Step("Randomly answer the questions and submit the answers. Check if answers were submitted.")
     public void answerQA() throws InterruptedException {
         this.success.answerQuestions();
         assertTrue(this.success.answersSubmitted());
     }
 
-    @Step
+    @Step("Look for the twitter link and necessary icon")
     public void lookForTwitter(){
         assertTrue(this.success.findTwitter());
     }

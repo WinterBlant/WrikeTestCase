@@ -44,7 +44,7 @@ public class QAPage extends PageObject {
         bAnswers.get(Randoms.getRandomNumber(2,6)).click();
         bAnswers.get(Randoms.getRandomNumber(7,8)).click();
         bSubmit.click();
-        Thread.sleep(10000);
+        Thread.sleep(5000);
     }
 
     public boolean findTwitter(){
